@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div class="round_button">
+        <img src="./images/icon-star.svg" alt="Start icon" />
+      </div>
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <form action="thanks.html" method="GET">
+        <div class="button_set">
+          <input
+            type="radio"
+            class="radio_button rad_button_1"
+            name="radio"
+            value="1"
+          />
+          <input
+            type="radio"
+            class="radio_button rad_button_2"
+            name="radio"
+            value="2"
+          />
+          <input
+            type="radio"
+            class="radio_button rad_button_3"
+            name="radio"
+            value="3"
+          />
+          <input
+            type="radio"
+            class="radio_button rad_button_4"
+            name="radio"
+            value="4"
+          />
+          <input
+            type="radio"
+            class="radio_button rad_button_5"
+            name="radio"
+            value="5"
+          />
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </main>
+  </body>
+</html>

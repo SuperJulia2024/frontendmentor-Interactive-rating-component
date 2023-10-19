@@ -1,0 +1,177 @@
+/* General */
+:root {
+  --orange-color: hsl(25, 97%, 53%);
+  --white-color: hsl(0, 0%, 100%);
+  --light-grey-color: hsl(217, 12%, 63%);
+  --medium-grey-color: hsl(216, 12%, 54%);
+  --dark-blue-color: hsl(213, 19%, 18%);
+  --very-dark-blue-color: hsl(216, 12%, 8%);
+  --dark-grey: hsl(215, 22%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue-color);
+  height: 100vh;
+}
+
+/* main */
+main {
+  background-color: var(--dark-grey);
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+  width: 345px;
+}
+
+main .round_button {
+  background-color: var(--dark-blue-color);
+  border-radius: 50%;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .round_button img {
+  width: 80%;
+}
+
+main h1 {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+main p {
+  color: var(--light-grey-color);
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.button_set {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 15px 0;
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: var(--dark-blue-color);
+  padding: 13px 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-grey-color);
+  font-family: "Overpass", sans-serif;
+}
+
+input[type="radio"]:hover {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--light-grey-color);
+  color: var(--white-color);
+}
+
+input.rad_button_1::before {
+  content: "1";
+}
+
+input.rad_button_2::before {
+  content: "2";
+}
+
+input.rad_button_3::before {
+  content: "3";
+}
+
+input.rad_button_4::before {
+  content: "4";
+}
+
+input.rad_button_5::before {
+  content: "5";
+}
+
+form button {
+  background-color: var(--orange-color);
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  color: var(--white-color);
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+form button:hover {
+  background-color: var(--white-color);
+  color: var(--orange-color);
+}
+
+/* thankyou */
+.thankyou {
+  align-items: center;
+  padding: 40px 10px;
+}
+
+.thankyou .img-container {
+  margin-bottom: 10px;
+}
+
+.thankyou p {
+  text-align: center;
+}
+
+.thankyou #rating {
+  background-color: var(--dark-blue-color);
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--orange-color);
+  margin-bottom: 10px;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+main {
+  width: 400px;
+}
+
+.thankyou {
+  padding: 45px 32px;
+}
+}
